@@ -1,0 +1,17 @@
+Generate an Agenda for a meeting based on the history of the conversation.
+
+Agenda must be generated in the following format:
+- 9:00 - 9:15 - Welcome and Introductions
+- 9:15 - 9:45 - Collaborative Discovery with the customer
+- 9:45 - 10:00 - Break
+- 10:00 - 11:00 - description of the topic identified in the history
+- 11:00 - 12:00 - description of the topic
+- 12:00 - 1:00 - Lunch
+- 1:00 - 2:00 - description of the topic
+- 2:00 - 3:00 - description of the topic
+- 3:00 - 3:15 - Break
+- 3:15 - 4:00 - description of the topic
+- 4:00 - 4:15 - Capture next steps and action items
+
+Be Formal and Professional.
+{{$history}}

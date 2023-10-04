@@ -1,0 +1,297 @@
+{
+    "version": "1.0",
+    "skillName": "MtcSkill",
+    "functionName": "AgendaBuilder",
+    "description": "Generate an agenda",
+    "filePath": "sk-csharp-azure-functions\\skills\\MtcSkill\\AgendaBuilder\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye."
+                }
+            ],
+            "output": {
+                "prompt": "Generate an Agenda for a meeting based on the history of the conversation.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic identified in the history\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\nMTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye.",
+                "durationInMilliseconds": 4750.1141,
+                "inputTokens": 590,
+                "outputTokens": 186,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye."
+                }
+            ],
+            "output": {
+                "prompt": "Generate an Agenda for a meeting based on the history of the conversation.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic identified in the history\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\nMTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye.",
+                "durationInMilliseconds": 7339.8076,
+                "inputTokens": 590,
+                "outputTokens": 186,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye."
+                }
+            ],
+            "output": {
+                "prompt": "Generate an Agenda for a meeting based on the history of the conversation.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic identified in the history\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\nMTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Sheelen,Frank:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Sheelen,Frank:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Sheelen,Frank:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins. Sheelen,Frank:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Sheelen,Frank:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Sheelen,Frank:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Sheelen,Frank:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Sheelen,Frank:You too.Bye.",
+                "durationInMilliseconds": 16639.0192,
+                "inputTokens": 590,
+                "outputTokens": 186,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Overview of Microsoft Teams Calling\n- 10:00 - 10:15 - Break\n- 10:15 - 11:00 - Discussion of current phone system and challenges\n- 11:00 - 12:00 - Overview of migration process and partner involvement\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Q&A\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia: This is Todd from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.    Customer: Good morning, Todd. Thank you for setting this up.     Todd Furst: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Todd Furst: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Todd Furst: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Customer: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Todd Furst: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Customer: No, actually it is scheduled for September 27th.     Todd Furst: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Todd Furst: You are welcome. One last question. Do we have a partner involved for this project?     Customer: Yes, we are working with a partner. They are helping us with the migration.     Todd Furst: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Todd Furst: Ok, I'll see you folks on the 27th. Have a great day.     Customer: You too. Bye."
+                }
+            ],
+            "output": {
+                "prompt": "Generate an Agenda for a meeting based on the history of the conversation.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic identified in the history\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Creative, Formal and Professional.\r\nMTC Philadelphia: This is Todd from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.    Customer: Good morning, Todd. Thank you for setting this up.     Todd Furst: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Todd Furst: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Todd Furst: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Customer: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Todd Furst: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Customer: No, actually it is scheduled for September 27th.     Todd Furst: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Todd Furst: You are welcome. One last question. Do we have a partner involved for this project?     Customer: Yes, we are working with a partner. They are helping us with the migration.     Todd Furst: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Todd Furst: Ok, I'll see you folks on the 27th. Have a great day.     Customer: You too. Bye.",
+                "durationInMilliseconds": 5971.8164,
+                "inputTokens": 571,
+                "outputTokens": 169,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Confirmation of stakeholders availability\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Discussion of timeline and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Confirmation of stakeholders availability\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Customer:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Customer:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Customer:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins Customer:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Customer:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Customer:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Customer:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Customer:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Customer:You too.Bye."
+                }
+            ],
+            "output": {
+                "prompt": "Generate an Agenda based on the discussed topics.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Creative, Formal and Professional.\r\nMTC Philadelphia:This is Todd from MTC Philadelphia.Good morning,thank you for accepting the meeting invite.Customer:Good morning,Todd.Thank you for setting this up.Todd Furst:I understand you are interested in learning more about Microsoft Teams Calling.Customer:Yes,we are.We are currently using Skype for Business and we are looking to move to Teams.Todd Furst:Great.I can help you with that.I have a few questions to get us started.Is that okay?Customer:Sure.Todd Furst:Great.What is your current phone system?What are some of the challenges you are looking to overcome or may be quick wins Customer:We are using a Cisco phone system.We are looking to move to Teams to take advantage of the new features and to reduce our costs.Todd Furst:Great.I know that we are looking for the MTC session scheduled for September 25th if I remember correctly.Is that correct?Customer:No,actually it is scheduled for September 27th.Todd Furst:Oh yes.Let me make sure that is reflected on our calendar.I will send you an invite along with the agenda for the day.Customer:Great.Thank you.Todd Furst:You are welcome.One last question.Do we have a partner involved for this project?Customer:Yes,we are working with a partner.They are helping us with the migration.Todd Furst:Great.I will make sure to confirm the availability of the relvant stakeholders for the session.I will send you an invite along with the agenda for the day.Customer:Great.Thank you.Todd Furst:Ok,I'll see you folks on the 27th.Have a great day.Customer:You too.Bye.",
+                "durationInMilliseconds": 4977.9351,
+                "inputTokens": 546,
+                "outputTokens": 176,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Q&A and discussion of next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Review of action items and timeline\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Q&A and discussion of next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Review of action items and timeline\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia: This is Todd from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Sheelen, Frank: Good morning, Rich. Thank you for setting this up.     Todd Furst: I understand you are interested in learning more about Microsoft Teams Calling.     Sheelen, Frank: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Todd Furst: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Sheelen, Frank: Sure.     Todd Furst: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Sheelen, Frank: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Todd Furst: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Sheelen, Frank: No, actually it is scheduled for September 27th.     Todd Furst: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Sheelen, Frank: Great. Thank you.     Todd Furst: You are welcome. One last question. Do we have a partner involved for this project?     Sheelen, Frank: Yes, we are working with a partner. They are helping us with the migration.     Todd Furst: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Sheelen, Frank: Great. Thank you.     Todd Furst: Ok, I'll see you folks on the 27th. Have a great day.     Sheelen, Frank: You too. Bye."
+                }
+            ],
+            "output": {
+                "prompt": "\r\nGenerate an Agenda for meeting based on the given topic.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\n\r\nMTC Philadelphia: This is Todd from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Sheelen, Frank: Good morning, Rich. Thank you for setting this up.     Todd Furst: I understand you are interested in learning more about Microsoft Teams Calling.     Sheelen, Frank: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Todd Furst: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Sheelen, Frank: Sure.     Todd Furst: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Sheelen, Frank: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Todd Furst: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Sheelen, Frank: No, actually it is scheduled for September 27th.     Todd Furst: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Sheelen, Frank: Great. Thank you.     Todd Furst: You are welcome. One last question. Do we have a partner involved for this project?     Sheelen, Frank: Yes, we are working with a partner. They are helping us with the migration.     Todd Furst: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Sheelen, Frank: Great. Thank you.     Todd Furst: Ok, I'll see you folks on the 27th. Have a great day.     Sheelen, Frank: You too. Bye.",
+                "durationInMilliseconds": 5412.4908,
+                "inputTokens": 600,
+                "outputTokens": 170,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Confirmation of stakeholders availability\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Questions and Answers\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Confirmation of stakeholders availability\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Questions and Answers\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "MTC Philadelphia: This is Rich from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Customer: Good morning, Rich. Thank you for setting this up.     Rich: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Rich: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Rich: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Customer: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Rich: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Customer: No, actually it is scheduled for September 27th.     Rich: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Rich: You are welcome. One last question. Do we have a partner involved for this project?     Customer: Yes, we are working with a partner. They are helping us with the migration.     Rich: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Rich: Ok, I'll see you folks on the 27th. Have a great day.     Customer: You too. Bye."
+                }
+            ],
+            "output": {
+                "prompt": "\r\nGenerate an Agenda for meeting based on the given topic.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\n\r\nMTC Philadelphia: This is Rich from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Customer: Good morning, Rich. Thank you for setting this up.     Rich: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Rich: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Rich: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins     Customer: We are using a Cisco phone system. We are looking to move to Teams to take advantage of the new features and to reduce our costs.     Rich: Great. I know that we are looking for the MTC session scheduled for September 25th if I remember correctly. Is that correct?     Customer: No, actually it is scheduled for September 27th.     Rich: Oh yes. Let me make sure that is reflected on our calendar. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Rich: You are welcome. One last question. Do we have a partner involved for this project?     Customer: Yes, we are working with a partner. They are helping us with the migration.     Rich: Great. I will make sure to confirm the availability of the relvant stakeholders for the session. I will send you an invite along with the agenda for the day.     Customer: Great. Thank you.     Rich: Ok, I'll see you folks on the 27th. Have a great day.     Customer: You too. Bye.",
+                "durationInMilliseconds": 5113.6573,
+                "inputTokens": 548,
+                "outputTokens": 174,
+                "result": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Discussion of quick wins and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Confirmation of stakeholders availability\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for MTC Philadelphia Meeting on September 27th:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of migration process and partner involvement\n- 2:00 - 3:00 - Discussion of quick wins and next steps\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Confirmation of stakeholders availability\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "history",
+                    "value": "@\"MTC Philadelphia: This is Rich from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Customer: Good morning, Rich. Thank you for setting this up.     Rich: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Rich: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Rich: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins"
+                }
+            ],
+            "output": {
+                "prompt": "\r\nGenerate an Agenda for meeting based on the given topic.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - description of the topic\r\n- 11:00 - 12:00 - description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - description of the topic\r\n- 2:00 - 3:00 - description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.\r\n\r\n@\"MTC Philadelphia: This is Rich from MTC Philadelphia. Good morning, thank you for accepting the meeting invite.     Customer: Good morning, Rich. Thank you for setting this up.     Rich: I understand you are interested in learning more about Microsoft Teams Calling.     Customer: Yes, we are. We are currently using Skype for Business and we are looking to move to Teams.     Rich: Great. I can help you with that. I have a few questions to get us started. Is that okay?     Customer: Sure.     Rich: Great. What is your current phone system? What are some of the challenges you are looking to overcome or may be quick wins",
+                "durationInMilliseconds": 5189.3218,
+                "inputTokens": 323,
+                "outputTokens": 174,
+                "result": " you are looking to achieve?\n\nAgenda for Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of potential quick wins and implementation timeline\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Questions and Answers\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": " you are looking to achieve?\n\nAgenda for Meeting:\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Collaborative Discovery with the customer\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Overview of Microsoft Teams Calling\n- 11:00 - 12:00 - Discussion of current phone system and challenges\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Overview of features and benefits of Microsoft Teams Calling\n- 2:00 - 3:00 - Discussion of potential quick wins and implementation timeline\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Questions and Answers\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://mtcazureopenaidemo.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.9,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "Azure container applications"
+                }
+            ],
+            "output": {
+                "prompt": "\r\nGenerate an Agenda for meeting based on the given topic.\r\n\r\nAgenda must be generated in the following format:\r\n- 9:00 - 9:15 - Welcome and Introductions\r\n- 9:15 - 9:45 - Collaborative Discovery with the customer\r\n- 9:45 - 10:00 - Break\r\n- 10:00 - 11:00 - Azure container applications description of the topic\r\n- 11:00 - 12:00 - Azure container applications description of the topic\r\n- 12:00 - 1:00 - Lunch\r\n- 1:00 - 2:00 - Azure container applications description of the topic\r\n- 2:00 - 3:00 - Azure container applications description of the topic\r\n- 3:00 - 3:15 - Break\r\n- 3:15 - 4:00 - Azure container applications description of the topic\r\n- 4:00 - 4:15 - Capture next steps and action items\r\n\r\nBe Formal and Professional.",
+                "durationInMilliseconds": 5171.4888,
+                "inputTokens": 197,
+                "outputTokens": 175,
+                "result": "\n\nAgenda for Meeting on Azure Container Applications\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Overview of Azure Container Applications\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Discussion of Benefits and Challenges of Azure Container Applications\n- 11:00 - 12:00 - Demonstration of Azure Container Applications\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Q&A Session on Azure Container Applications\n- 2:00 - 3:00 - Best Practices for Implementing Azure Container Applications\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Case Studies on Azure Container Applications\n- 4:00 - 4:15 - Capture next steps and action items",
+                "textCompletionResult": "\n\nAgenda for Meeting on Azure Container Applications\n- 9:00 - 9:15 - Welcome and Introductions\n- 9:15 - 9:45 - Overview of Azure Container Applications\n- 9:45 - 10:00 - Break\n- 10:00 - 11:00 - Discussion of Benefits and Challenges of Azure Container Applications\n- 11:00 - 12:00 - Demonstration of Azure Container Applications\n- 12:00 - 1:00 - Lunch\n- 1:00 - 2:00 - Q&A Session on Azure Container Applications\n- 2:00 - 3:00 - Best Practices for Implementing Azure Container Applications\n- 3:00 - 3:15 - Break\n- 3:15 - 4:00 - Case Studies on Azure Container Applications\n- 4:00 - 4:15 - Capture next steps and action items"
+            }
+        }
+    ]
+}
