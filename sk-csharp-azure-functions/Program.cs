@@ -43,6 +43,7 @@ public static class Program
 
     private static IKernel CreateKernel(IServiceProvider provider)
     {
+        // Initialize the kernel settings
         var kernelSettings = KernelSettings.LoadSettings();
 
         using ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
